@@ -23,6 +23,6 @@
 <img src = "FÍSICO.jpg" width = 1000>
 
 ## Vídeo Explicativo
-* [Link](https://www.youtube.com/watch?v=Q3nPlJVJtBY) do vídeo com informações complementares (explicação do funcionamento do circuito, levantamento de preços e justificativa da escolha de cada componente) LEIA O COMENTÁRIO PINADO NO YOUTUBE!
+* [Link](https://www.youtube.com/watch?v=Q3nPlJVJtBY) do vídeo com informações complementares (explicação do funcionamento do circuito, levantamento de preços e justificativa da escolha de cada componente) LEIA O COMENTÁRIO PINADO NO YOUTUBE!!!
 
 
