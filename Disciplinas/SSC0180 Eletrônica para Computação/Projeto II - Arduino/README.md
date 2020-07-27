@@ -18,5 +18,7 @@
 <br>
 <img src = "Inferior.jpg">
 
-<h2> Link</a> para vídeo do carrinho funcionando: </h2>
+<h2> Link</a> para vídeo do carrinho funcionando: 
+<br>
+<a href="https://www.youtube.com/watch?v=SkatsO9j9xM" target="_blank"> https://www.youtube.com/watch?v=SkatsO9j9xM </a></h2>
 
