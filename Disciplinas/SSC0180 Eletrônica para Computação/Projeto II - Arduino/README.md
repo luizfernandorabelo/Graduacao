@@ -12,7 +12,7 @@
 <li><div align = "justify"><b>1 x Servo Motor:</b> motor que varia seu ângulo de 0 a 179 graus. Serve de suporte ao sensor ultrassônico para que o carro "olhe para os lados" quando detectar uma possível colisão; </div> </li>
 <li><div align = "justify"><b>4 x Motores DC:</b> mini motores com caixas de redução que são acoplados às rodas do carro;</div></li>
 <li><div align = "justify"><b>Ponte H:</b> módulo que permite o controle da velocidade e do sentido da rotação dos motores, por PWM e por polarização direta e reversa, respectivamente;</div></li>
-<li><div align = "justify"><b>2 x Pilhas Recarregáveis de 3.7V:</b> são a fonte de energia elétrica do circuito de controle (formado pelo Arduino e Sensores) e do circuito de força (servo motor e micro motores).</div></li>
+<li><div align = "justify"><b>2 x Pilhas Recarregáveis de 3.7V:</b> são a fonte de energia elétrica do circuito de controle (Arduino e sensores) e do circuito de força (servo motor e micro motores).</div></li>
 </ul>
 
 <br>
