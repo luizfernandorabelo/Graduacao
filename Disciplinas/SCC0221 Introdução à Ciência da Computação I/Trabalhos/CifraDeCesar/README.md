@@ -10,3 +10,5 @@ Para usar o programa, devem ser inseridos, respectivamente, na entrada padrão:
 * **Uma mensagem de texto** - a qual será criptografada ou descriptografada;
 
 Após a alteração, a nova mensagem é escrita na saída padrão.
+
+

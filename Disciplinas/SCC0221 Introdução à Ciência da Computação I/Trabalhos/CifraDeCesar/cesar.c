@@ -1,7 +1,8 @@
 #include <stdio.h> 
 #include <stdlib.h> 
-#include <string.h> 
 #include <ctype.h>
+#include <string.h> 
+
 
 #define ENCRYPT 1
 #define DECRYPT 2

@@ -68,4 +68,5 @@ diff6:
 diff7:
 	diff ./Casos/7.myout ./Casos/7.out
 diff8:
-	diff ./Casos/8.myout ./Casos/8.out
+	diff ./Casos/8.myout ./Casos/8.out 
+
