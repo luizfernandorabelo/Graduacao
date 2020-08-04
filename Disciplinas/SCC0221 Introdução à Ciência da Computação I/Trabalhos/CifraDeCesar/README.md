@@ -1,6 +1,6 @@
 # Cifra de César
 
-Programa capaz de fazer uma criptografia e descriptografia simples de mensagens. 
+Programa capaz de fazer uma criptografia ou descriptografia simples de mensagens. 
 
 ## Modo de Uso:
 
