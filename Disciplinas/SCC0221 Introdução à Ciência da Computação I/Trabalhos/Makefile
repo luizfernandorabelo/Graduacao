@@ -34,7 +34,7 @@ run6:
 run7:
 	@./$(PROG_NAME) < ./Casos/7.in > ./Casos/7.myout
 run8:
-	@./$(PROG_NAME) < ./Casos/8.in > ./Casos/1.myout
+	@./$(PROG_NAME) < ./Casos/8.in > ./Casos/8.myout
 run9:
 	@./$(PROG_NAME) < ./Casos/9.in > ./Casos/9.myout
 run10:
