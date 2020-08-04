@@ -23,7 +23,7 @@
 <img src="Conexões.png" width = 1000>
 <div align="justify"><p>Não há nenhum segredo quanto às conexões. Deve-se apenas atentar para que os pinos enebleA e enableB da ponte H sejam conectados em portas PWM do Arduino. Essas potas devem ser diferentes das 9 e 10, visto que os comandos analogWrite() ficam inabilitados nessas portas quando a biblioteca para controle do Servo Motor está em uso. </p></div>
 
-<h2> Link</a> para vídeo do carrinho funcionando: 
+<h2> Link para vídeo do carrinho funcionando: 
 <br>
 <a href="https://www.youtube.com/watch?v=SkatsO9j9xM" target="_blank"> https://www.youtube.com/watch?v=SkatsO9j9xM </a></h2>
 
