@@ -3,7 +3,6 @@
 #include <ctype.h>
 #include <string.h> 
 
-
 #define ENCRYPT 1
 #define DECRYPT 2
 
@@ -50,9 +49,7 @@ char changeCharacter(char character, int option, int key){
 		character += 26;
 	}
 
-	character += key;
-
-	return(character);
+	return(character + key);
 }
 
 
