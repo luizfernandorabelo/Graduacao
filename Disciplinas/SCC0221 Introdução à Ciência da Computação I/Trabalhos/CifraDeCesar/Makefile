@@ -35,18 +35,6 @@ run7:
 	@./$(PROG_NAME) < ./Casos/7.in > ./Casos/7.myout
 run8:
 	@./$(PROG_NAME) < ./Casos/8.in > ./Casos/8.myout
-run9:
-	@./$(PROG_NAME) < ./Casos/9.in > ./Casos/9.myout
-run10:
-	@./$(PROG_NAME) < ./Casos/10.in > ./Casos/10.myout
-run11:
-	@./$(PROG_NAME) < ./Casos/11.in > ./Casos/11.myout
-run12:
-	@./$(PROG_NAME) < ./Casos/12.in > ./Casos/12.myout
-run13:
-	@./$(PROG_NAME) < ./Casos/13.in > ./Casos/13.myout
-run14:
-	@./$(PROG_NAME) < ./Casos/14.in > ./Casos/14.myout
 
 grind1:
 	valgrind $(VALGRIND_FLAGS) ./$(PROG_NAME) < ./Casos/1.in > ./Casos/1.myout 
@@ -64,18 +52,6 @@ grind7:
 	valgrind $(VALGRIND_FLAGS) ./$(PROG_NAME) < ./Casos/7.in > ./Casos/7.myout 
 grind8:
 	valgrind $(VALGRIND_FLAGS) ./$(PROG_NAME) < ./Casos/8.in > ./Casos/8.myout 
-grind9:
-	valgrind $(VALGRIND_FLAGS) ./$(PROG_NAME) < ./Casos/9.in > ./Casos/9.myout 
-grind10:
-	valgrind $(VALGRIND_FLAGS) ./$(PROG_NAME) < ./Casos/10.in > ./Casos/10.myout 
-grind11:
-	valgrind $(VALGRIND_FLAGS) ./$(PROG_NAME) < ./Casos/11.in > ./Casos/11.myout 
-grind12:
-	valgrind $(VALGRIND_FLAGS) ./$(PROG_NAME) < ./Casos/12.in > ./Casos/12.myout 
-grind13:
-	valgrind $(VALGRIND_FLAGS) ./$(PROG_NAME) < ./Casos/13.in > ./Casos/13.myout 
-grind14:
-	valgrind $(VALGRIND_FLAGS) ./$(PROG_NAME) < ./Casos/14.in > ./Casos/14.myout 
 
 diff1:
 	diff ./Casos/1.myout ./Casos/1.out
@@ -93,16 +69,3 @@ diff7:
 	diff ./Casos/7.myout ./Casos/7.out
 diff8:
 	diff ./Casos/8.myout ./Casos/8.out
-diff9:
-	diff ./Casos/9.myout ./Casos/9.out
-diff10:
-	diff ./Casos/10.myout ./Casos/10.out
-diff11:
-	diff ./Casos/11.myout ./Casos/11.out
-diff12:
-	diff ./Casos/12.myout ./Casos/12.out
-diff13:
-	diff ./Casos/13.myout ./Casos/13.out
-diff14:
-	diff ./Casos/14.myout ./Casos/14.out
-
