@@ -6,19 +6,26 @@
 #define ENCRYPT 1
 #define DECRYPT 2
 
+#define INTERACTION 0
+
 char changeCharacter(char character, int option, int key);
 /*Função que criptografa um caratere, alterando seu valor. Tem como parâmetros o caractere a ser alterado, 
 a opção de alteração (criptografar[1] ou descriptografar[2]) e a chave de alteração da mensagem. */
 
 int main(int argc, char **argv){
+
+	if(INTERACTION) printf("Bem vindo ao programa CIFRA DE CESAR - seu criptografador simples de mensagens\n");
 	
 	//Declaração e Inicialização de Variáveis:
 	int option = 0, key = 0; 
 	char *message = calloc(101, sizeof(char));
 
 	//Leitura e Armazenamento de dados da Entrada Padrão:
-	scanf("%d", &option); 
+	if(INTERACTION) printf("\n[1] Criptografar ou [2] Descriptografar\nDigite sua opcao: ");
+	scanf("%d", &option);
+	if(INTERACTION) printf("\nAgora digite um número, correspondente a chave de criptografia: ");
 	scanf("%d", &key); 
+	if(INTERACTION) printf("\nDigite sua mensagem: ");
 	scanf(" %[^\n]", message);
 
 	//Troca de cada caractere alfabético da mensagem:
@@ -29,6 +36,7 @@ int main(int argc, char **argv){
 	}
 	
 	//Impressão da Mensagem Final:
+	if(INTERACTION) printf("\nA nova mensagem ficou:");
 	printf("%s\n", message);
 
 	//Liberação de Memória Alocada:
@@ -51,8 +59,3 @@ char changeCharacter(char character, int option, int key){
 
 	return(character + key);
 }
-
-
-
-
-
