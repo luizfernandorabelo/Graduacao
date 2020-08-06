@@ -183,6 +183,7 @@ int getPatternOneOccurrence(char *pattern1, char **words_list, int size_of_words
     }
     //Liberação da Compilação da Expressão Regular:
     regfree(&regex);
+    //Retorno do número de ocorrências do padrão 1:
     return occurrence;
 }
 
@@ -198,7 +199,7 @@ int getPalindromeOccurrence(char **words_list, int size_of_words_list){
             }
             else{ //mas se alguma das posições correspondentes for diferente 
                 flag = FALSE; //a flag é setada como falso
-                break; //e deve-se sair do laço de repetição 
+                break; 
             }
         }
         occurrence = (flag == TRUE) ? (occurrence + 1) : occurrence;
