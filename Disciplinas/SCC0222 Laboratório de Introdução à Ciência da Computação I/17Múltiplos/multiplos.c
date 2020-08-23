@@ -10,7 +10,7 @@ int main(int argc, char *argv[]){
     //Leitura e Armazenamento das Entradas:
     scanf("%d %d %d", &n1, &n2, &n3); 
 
-    //Cálculo e Impressão dos n1 primeiros números de n2 e n3:
+    //Cálculo e Impressão dos n1 primeiros múltiplos de n2 e n3:
     while((i + j) < n1){ 
         if(i * n2 < j * n3){ 
             printf("%d\n", i * n2);
