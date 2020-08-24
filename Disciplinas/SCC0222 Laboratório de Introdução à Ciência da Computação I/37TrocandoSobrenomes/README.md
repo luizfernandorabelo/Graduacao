@@ -1,0 +1,3 @@
+# Trocando Sobrenomes
+
+Programa que lê uma lista de nomes completos da entrada padrão até encontrar um nome terminado com o caractere '$'. Em seguida, a partir do primeiro nome da lista, é trocado o último sobrenome deste nome com o último sobrenome do último nome da lista. Após isso, são trocados os últimos sobrenomes do segundo e do penúltimo nome da lista, e assim por diante. A nova lista de nomes é impressa na saída padrão.
