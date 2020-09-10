@@ -16,7 +16,7 @@
     float circleGetRadius(CIRCLE *circle);
     void circlePrint(CIRCLE *circle);
     void circleDelete(CIRCLE **circle);
-    bool isPointIsideCircle(CIRCLE *circle, POINT *point);
+    bool isPointInsideCircle(CIRCLE *circle, POINT *point);
 
 #endif
 

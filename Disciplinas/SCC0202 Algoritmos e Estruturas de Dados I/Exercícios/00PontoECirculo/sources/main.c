@@ -29,7 +29,7 @@ int main(int argc, char *argv[]){
     float newPointY = readFloat();
     POINT *newPoint = pointCreate(newPointX, newPointY);
 
-    bool inside = isPointIsideCircle(myCircle, newPoint);
+    bool inside = isPointInsideCircle(myCircle, newPoint);
     
     if(inside == True) printf("\n-> O ponto (%.1f, %.1f) é interior ao círculo\n", newPointX, newPointY);
     else printf("\nO ponto (%.1f, %.1f) é exterior ao círculo\n", newPointX, newPointY);

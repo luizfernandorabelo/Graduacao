@@ -49,7 +49,7 @@ float circleGetRadius(CIRCLE *circle){
     return 0;
 }
 
-bool isPointIsideCircle(CIRCLE *circle, POINT *newPoint){
+bool isPointInsideCircle(CIRCLE *circle, POINT *newPoint){
     float twoPointsDistance = pointGetTwoPointsDistance(circle->point, newPoint);
     if(twoPointsDistance > circle->radius) return False;
     return True;
