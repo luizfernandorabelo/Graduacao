@@ -13,7 +13,7 @@ run:
 	@./$(PROG_NAME)
 
 zip: 
-	@zip -r $(PROG_NAME).zip Makefile sources/*.c includes/*.h 
+	@zip -r $(PROG_NAME).zip Makefile $(SOURCES) $(HEADERS) 
 
 clean:
 	@rm -r $(PROG_NAME)
