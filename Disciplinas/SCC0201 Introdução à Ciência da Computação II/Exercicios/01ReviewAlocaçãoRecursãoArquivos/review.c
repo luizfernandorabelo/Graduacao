@@ -13,8 +13,6 @@ typedef struct{
     int columns;
     int XStart;
     int YStart;
-    int Xknot;
-    int Yknot;
     char **map;
 }MAZE_DATA;
 
