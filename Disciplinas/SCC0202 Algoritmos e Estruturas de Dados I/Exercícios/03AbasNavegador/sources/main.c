@@ -34,7 +34,7 @@ int main(int argc, char *argv[]){
             lista_imprimir(lista);
         }
         else if(opcao != SAIR){
-            //printf("Opcao inválida!\n");
+            printf("Opcao inválida!\n");
         }
         opcao = readInteger();
     }
