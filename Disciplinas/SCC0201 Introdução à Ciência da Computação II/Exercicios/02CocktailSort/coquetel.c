@@ -142,7 +142,7 @@ int binarySearchByName(PEOPLE_DATA **peopleData, int peopleNumber, char *person)
     while(min <= max){
         half = (min + max) / 2;
         if(strcasecmp(person, peopleData[half]->name) == 0) return half;
-        else if(strcasecmp(person, peopleData[half]->name) < 0) max = half-1;
+        else if(strcasecmp(person, peopleData[half]->name) < 0) max = half - 1;
         else if(strcasecmp(person, peopleData[half]->name) > 0) min = half + 1;
     }
     return -1;
