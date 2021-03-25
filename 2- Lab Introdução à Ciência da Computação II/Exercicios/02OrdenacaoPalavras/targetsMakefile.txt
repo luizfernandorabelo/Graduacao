@@ -1,0 +1,6 @@
+-> Targets do Arquivo Makefile:    
+    - make: compila o programa com a flag "RUN_CODES" para a correção automática do sistema;
+    - run: executa o programa no estilo da correção automática do sistema;
+    - time: compila o programa com a flag "COUNT_TIME" e o executa 12 vezes, permitindo que sejam analisados os três tipos de ordenação para cada arquivo de entrada;
+    - plot: plota os três gráficos "tamanho de entrada x tempo de execução" na tela;
+    - clean: remove os dados da pasta "Tempos"
