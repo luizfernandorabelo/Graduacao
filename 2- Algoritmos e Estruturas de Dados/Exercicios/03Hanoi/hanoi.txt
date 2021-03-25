@@ -1,0 +1,55 @@
+>>> SAÍDA GERADA PARA 2 DISCOS
+
+
+Pilha A:
+__
+____
+
+
+Pilha B:
+
+
+Pilha C:
+
+
+
+1 disco movido de A para B
+
+Pilha A:
+____
+
+
+Pilha B:
+__
+
+
+Pilha C:
+
+
+
+1 disco movido de A para C
+
+Pilha A:
+
+
+Pilha B:
+__
+
+
+Pilha C:
+____
+
+
+
+1 disco movido de B para C
+
+Pilha A:
+
+
+Pilha B:
+
+
+Pilha C:
+__
+____
+
