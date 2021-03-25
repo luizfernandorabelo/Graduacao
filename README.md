@@ -1,2 +1,3 @@
 # Graduacao
-Projetos e trabalhos desenvolvidos para o curso de Bacharelado em Ciências de Computação da Universidade de São Paulo.
+
+Notas, trabalhos e exercícios desenvolvidos para o curso de Bacharelado em Ciências de Computação.
