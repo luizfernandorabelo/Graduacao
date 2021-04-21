@@ -1,0 +1,12 @@
+{
+    "configurations": [
+    {
+        "name": "Linux",
+        "includePath": [
+            "${workspaceFolder}/Util",
+            "${default}"
+        ]
+    }
+    ],
+    "version": 0
+}
