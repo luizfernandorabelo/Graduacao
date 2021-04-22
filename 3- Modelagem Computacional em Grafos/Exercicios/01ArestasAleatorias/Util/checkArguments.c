@@ -8,7 +8,7 @@
 #define MAX_PROBABILITY 1
 
 
-void checkArgumentNumber(int argc) {
+void check_argument_number(int argc) {
 
     if (argc != N_ARGS) {
         printf("Uso: ./exec n p\n   ");
@@ -20,7 +20,7 @@ void checkArgumentNumber(int argc) {
 }
 
 
-void checkArgumentValues(int numberOfNodes, double connectionProbability) {
+void check_argument_values(int numberOfNodes, double connectionProbability) {
 
     if (numberOfNodes <= 0) {
         printf("Impossível criar matriz com tamanho %d", numberOfNodes);

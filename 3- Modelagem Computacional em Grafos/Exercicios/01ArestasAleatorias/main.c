@@ -1,5 +1,6 @@
-#include <randomMatrix.h>
-#include <checkArguments.h>
+#include "randomMatrix.h"
+#include "checkArguments.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -9,12 +10,12 @@
 
 int main(int argc, char *argv[]) {
 
-    checkArgumentNumber(argc);
+    check_argument_number(argc);
 
     int numberOfNodes = atoi(NUMBER_OF_NODES_ARG);
     double connectionProbability = (double) atof(CONNECTION_PROBABILITY_ARG);
 
-    checkArgumentValues(numberOfNodes, connectionProbability);
+    check_argument_values(numberOfNodes, connectionProbability);
 
     int **randomMatrix = create_new_random_matrix(numberOfNodes, connectionProbability);
     print_matrix(randomMatrix, numberOfNodes);

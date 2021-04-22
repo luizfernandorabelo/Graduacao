@@ -1,5 +1,5 @@
-#ifndef __MY_MATRIX__
-    #define __MY_MATRIX__
+#ifndef __RANDOM_MATRIX_H__
+    #define __RANDOM_MATRIX_H__
 
     /* Funções auxiliares para representar a matriz de adjacência aleatória de um grafo. Implementações no arquivo randomMatrix.c */
 
@@ -7,5 +7,4 @@
     void print_matrix(int **matrix, int numberOfNodes);
     void free_matrix(int **matrix, int numberOfNodes);
     
-
 #endif

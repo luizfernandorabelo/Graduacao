@@ -1,4 +1,4 @@
-#include <randomMatrix.h>
+#include "randomMatrix.h"
 
 #include <stdio.h>
 #include <stdlib.h>
