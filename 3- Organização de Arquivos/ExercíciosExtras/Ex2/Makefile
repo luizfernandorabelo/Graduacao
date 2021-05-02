@@ -10,4 +10,4 @@ run:
 	@./$(EXEC)
 
 zip:
-	@zip -r Ex1 $(SOURCES) $(INCLUDES) Makefile
+	@zip -r Ex2 $(SOURCES) $(INCLUDES) Makefile
