@@ -6,23 +6,32 @@ public class SquareRoot {
 
         final double ERROR_BOUND = 0.00000001;
 
-        System.out.print("Digite um númeor real: ");
+        System.out.println("==== CALCULA RAIZ QUADRADA ====");
 
+        System.out.print("Digite o valor do radicando: ");
         double radicand = EntradaTeclado.leDouble();
-        double currRoot = 0.0;
-        double previousRoot = 0.0;
 
-        while (Math.pow(currRoot, 2.0) <= radicand)
-            currRoot++;
-
-        currRoot--;
-
-        while (Math.abs(currRoot - previousRoot) >= ERROR_BOUND) {
-            previousRoot = currRoot;
-            currRoot = (previousRoot + radicand / previousRoot) / 2;
+        if (radicand < 0) {
+            System.out.println("∄ solução ∊ ℝ");
+            System.exit(0);
         }
 
-        System.out.println(currRoot);
+        System.out.print("Digite uma aproximação para o valor da raiz: ");
+        double currentAproximation = EntradaTeclado.leDouble();
+
+        if (currentAproximation <= 0 && radicand != 0) {
+            System.out.println("A aproximação deve ser maior que 0");
+            System.exit(0);
+        }
+
+        double previousAproximation = radicand / 2;
+
+        while (Math.abs(currentAproximation - previousAproximation) >= ERROR_BOUND) {
+            previousAproximation = currentAproximation;
+            currentAproximation = (previousAproximation + radicand / previousAproximation) / 2;
+        }
+
+        System.out.printf("Valor aproximado = %f", currentAproximation);
     }
 
 }
