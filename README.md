@@ -4,7 +4,7 @@ Notas, trabalhos e exercícios desenvolvidos para algumas das disciplinas do cur
 
 ## 1° SEMESTRE
 
-<b> SSC0180 <b> - Eletrônica para Computação  
+* SSC0180 - Eletrônica para Computação  
 * SCC0221 - Introdução à Ciência da Computação 1
 * SCC0222 - Laboratório de Introdução à Ciência da Computação 1
 
