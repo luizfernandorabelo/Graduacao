@@ -9,6 +9,8 @@
     using std::cout;
     using std::pair;
     using std::vector;
+    
+    /* Classe para representação de um GRAFO SIMPLES. Implementação em graph.cpp */
 
     class Graph {
 
