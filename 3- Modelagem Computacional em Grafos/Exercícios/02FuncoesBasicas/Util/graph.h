@@ -3,6 +3,7 @@
 
     #include <iostream>
     #include <vector>
+    #include <cstdio>
 
     #include "adjacencyMatrix.h"
 

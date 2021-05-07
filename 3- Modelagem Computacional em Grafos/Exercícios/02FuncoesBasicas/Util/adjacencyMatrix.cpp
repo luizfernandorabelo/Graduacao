@@ -3,6 +3,9 @@
 
 int **alocate_table(int dimension) {
 
+    if (dimension <= 0)
+        return NULL;
+
     int **table = (int **) calloc(dimension, sizeof(int *));
 
     for (int i = 0; i < dimension; i++)
@@ -19,6 +22,11 @@ AdjacencyMatrix::AdjacencyMatrix(int matrix_dimension) {
 
 
 void AdjacencyMatrix::print(FILE *stream) {
+
+    if (table == NULL) {
+        fprintf(stream, "Could not print null matrix");
+        return;
+    }
 
     fprintf(stream, "  ");
 
@@ -37,6 +45,9 @@ void AdjacencyMatrix::print(FILE *stream) {
 
 
 void AdjacencyMatrix::fill_randomly(double connection_probability) {
+
+    if (table == NULL)
+        return;
 
     srand(time(NULL));
 
@@ -62,7 +73,7 @@ bool are_valid_coordinates(pair<int,int> coordinates, int min_range, int max_ran
 
 void AdjacencyMatrix::set_value(pair<int,int> coordinates, int value) {
 
-    if (!are_valid_coordinates(coordinates, 1, dimension))
+    if (table == NULL || !are_valid_coordinates(coordinates, 1, dimension))
         return;
     
     table[coordinates.first-1][coordinates.second-1] = value;
@@ -72,7 +83,7 @@ void AdjacencyMatrix::set_value(pair<int,int> coordinates, int value) {
 
 int AdjacencyMatrix::get_value(pair<int,int> coordinates) {
 
-    if (!are_valid_coordinates(coordinates, 1, dimension))
+    if (table == NULL || !are_valid_coordinates(coordinates, 1, dimension))
         return -1;
     
     return table[coordinates.first-1][coordinates.second-1];

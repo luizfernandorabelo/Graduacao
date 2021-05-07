@@ -2,7 +2,7 @@
 
 
 Graph::Graph(int graph_total_vertices) : adjacency_matrix(graph_total_vertices) {
-    total_vertices = graph_total_vertices;
+    total_vertices = graph_total_vertices >= 0 ? graph_total_vertices : 0;
 }
 
 
