@@ -23,9 +23,9 @@
         jal print_message                  # imprimindo string apontada por $a0
 
         move $a0, $s0                      # carregando o conteúdo de $s0 (inteiro lido) para $a0 
-        jal reverse_number                 # obtendo o inteiro com a ordem dos dígitos invertida (vai para $t0) 
+        jal reverse_number                 # obtendo o inteiro com a ordem dos dígitos invertida (vai para $v0) 
         
-        move $a0, $t0                      # carregando o conteúdo de $t0 (inteiro invertido) para $a0 
+        move $a0, $v0                      # carregando o conteúdo de $v0 (inteiro invertido) para $a0 
         jal print_integer                  # imprimindo o inteiro em $a0
 
         jal finish_program                 # finalizando o programa
@@ -53,7 +53,7 @@
     
 
     reverse_number:
-        move $t0, $zero                    # inicializando o conteúdo de $t0 com 0 (o valor final será o número invertido)
+        move $v0, $zero                    # inicializando o conteúdo de $v0 com 0 (o valor final será o número invertido)
         move $t1, $a0                      # copiando o número passado como parâmetro para o registrador $t1
         move $t2, $zero                    # inicializando o conteúdo de $t2 com 0 (representará o "índice" do dígito atual)
         li $t3, 10                         # inicializando o conteúdo de $t3 com 10 (será constante)
@@ -79,7 +79,7 @@
             pow_end:
 
             mul $t4, $t4, $t6              # multiplicando o valor de $t4 (dígito atual) pelo de $t6 (potência de 10 calculada)
-            add $t0, $t0, $t4              # adicionando o dígito atual com seu peso em $t0 (onde ficará armazenado o número final invertido)
+            add $v0, $v0, $t4              # adicionando o dígito atual com seu peso em $v0 (onde ficará armazenado o número final invertido)
 
             addi $t2, $t2, 1               # incrementando o valor de $t2 ("índice" do dígito atual)
 
