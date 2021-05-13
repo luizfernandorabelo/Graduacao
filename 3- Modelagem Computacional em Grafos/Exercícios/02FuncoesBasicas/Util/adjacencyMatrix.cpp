@@ -51,9 +51,10 @@ void AdjacencyMatrix::fill_randomly(double connection_probability) {
 
     srand(time(NULL));
 
-    for (int i = 0; i < dimension; i++) {
-        for (int j = i + 1; j < dimension; j++) {
-            if (connection_probability * 100 >= rand() % 100) { table[i][j] = 1; table[j][i] = 1; }  
+    for (int i = 1; i < dimension; i++) {
+        for (int j = i + 1; j <= dimension; j++) {
+            if (connection_probability * 100 >= rand() % 100)
+                set_value(pair<int,int> (i,j), 1);
         }
     }
 }
