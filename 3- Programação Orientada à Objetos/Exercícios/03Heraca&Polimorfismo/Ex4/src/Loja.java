@@ -3,13 +3,12 @@ import java.util.Arrays;
 public class Loja {
 
     private static int capacidade = 1; // número de produtos que a loja é capaz de armazenar
-    private static int totalProdutos = 0; // número de produtos diferentes que a loja armazena
+    private static int totalProdutos = 0; // número de produtos diferentes que a loja armazena atualmente
     private static int quantidadeCds = 0; // soma de todas as quantidades de todos os cds presentes na loja
     private static int quantidadeDvds = 0; // soma de todas as quantidades de todos os dvds presentes na loja
     private static int quantidadeLivros = 0; // soma de todas as quantidades de todos os livros presentes na loja
     private static Produto[] produtos = new Produto[capacidade]; // conjunto dos diferentes produtos presentes na loja
     private static int[] quantidadesProdutos = new int[capacidade]; // quantidades de todos os diferentes produtos presentes na loja
-
 
     private static void garantirCapacidade() {
         if (totalProdutos == capacidade) {
@@ -63,6 +62,8 @@ public class Loja {
 
         if (quantidadesProdutos[indiceRemovido] > 0)
             return;
+
+        // Se não houver restado nenhuma unidade do produto, ele deve ser removido do conjunto de diferentes produtos:
 
         for (int i = indiceRemovido; i < totalProdutos - 1; i++) {
             produtos[i] = produtos[i+1];

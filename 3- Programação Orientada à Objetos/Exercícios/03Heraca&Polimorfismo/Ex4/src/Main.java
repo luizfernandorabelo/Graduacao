@@ -2,16 +2,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Criação de cds:
+        // Criação de alguns cds:
         Cd cd1 = new Cd(12345, "Parachutes", "Coldplay");
         Cd cd2 = new Cd(67890, "Viva la Vida", "Coldplay");
         Cd cd3 = new Cd(97531, "Twenty One", "Adele");
 
-        // Criação de dvds:
+        // Criação de alguns dvds:
         Dvd dvd1 = new Dvd(86420, "Vidas Secas", "Herbert Richards");
         Dvd dvd2 = new Dvd(24680, "Pinguins de Madagascar", "DreamWorks");
 
-        // Criação de livros:
+        // Criação de alguns livros:
         Livro livro1 = new Livro(13579, "JK Rowling", "Harry Potter");
         Livro livro2 = new Livro(11111, "Yuval Noah Harari", "Sapiens");
         Livro livro3 = new Livro(98989, "George Orwell", "1984");

@@ -1,12 +1,18 @@
 import java.util.Arrays;
 
+/* NOTA: Dividi logicamente o array de pessoas em 2 regiões: sendo a primeira das pessoas físicas e a segunda das jurídicas.
+         Isso trouxe a desvantagem da possibilidade de ter que fazer eventuais shifts na inserção de pessoas físicas.
+         Mas também trouxe a vantagem de deixar o arranjo já pronto para a função de ordenação que será aplicada (quick sort), além de que
+         na busca e remoção por cpf ou cnpj, são comparadas apenas as pessoas correspondentes à categoria do documento passado por parâmetro.
+ */
+
 public class Agenda {
 
-    private static int capacidade = 1;
-    private static int totalPessoas = 0;
-    private static int totalPessoasFisicas = 0;
-    private static int totalPessoasJuridicas = 0;
-    private static Pessoa[] pessoas = new Pessoa[capacidade];
+    private static int capacidade = 1; // quantidade de pessoas que a agenda é capaz de armazenar
+    private static int totalPessoasFisicas = 0; // quantidade de pessoas físicas adicionadas na agenda
+    private static int totalPessoasJuridicas = 0; // quantidade de pessoas jurídicas adicionadas na agenda
+    private static int totalPessoas = 0; // totalPessoasFisicas + totalPessoasJuridicas
+    private static Pessoa[] pessoas = new Pessoa[capacidade]; // arranjo com todas as pessoas inseridas na agenda
 
     private static void garantirCapacidade() {
         if (totalPessoas == capacidade) {
