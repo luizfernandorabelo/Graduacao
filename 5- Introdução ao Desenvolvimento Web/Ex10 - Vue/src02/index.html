@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Validated Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .error-container {
+        width: 50%;
+        margin: 20px auto;
+        padding: 10px;
+        text-align: center;
+        color: red;
+      }
+      .error-container ul {
+        list-style-position: inside;
+        list-style-type: none;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="container-fluid">
+      <h1>Validated Form</h1>
+
+      <div class="form-container">
+        <div class="form-row">
+          <div class="form-group col-6">
+            <input
+              type="text"
+              class="form-control"
+              data-required
+              placeholder="Primeiro Nome"
+              v-model="firstName"
+            />
+          </div>
+          <div class="form-group col-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Sobrenome"
+              v-model="lastName"
+            />
+          </div>
+          <div class="form-group col-12">
+            <input
+              type="text"
+              class="form-control"
+              data-required
+              data-type="date"
+              placeholder="Data de Nascimento"
+              v-model="birthDay"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Email"
+              data-type="email"
+              v-model="email"
+            />
+          </div>
+          <div class="form-group col-md-4">
+            <select
+              id="state"
+              class="form-control"
+              data-required
+              v-model="sign"
+            >
+              <option selected>Signo</option>
+              <option>Áries</option>
+              <option>Touro</option>
+              <option>Gêmeos</option>
+              <option>Câncer</option>
+              <option>Leão</option>
+              <option>Virgem</option>
+              <option>Libra</option>
+              <option>Escorpião</option>
+              <option>Sagitário</option>
+              <option>Capricórnio</option>
+              <option>Aquário</option>
+              <option>Peixes</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" @click="validateInputs">
+          Enviar
+        </button>
+      </div>
+      <div class="error-container" v-if="errors.length">
+        <h4 v-if="errors.length === 1">Verifique o seguinte erro:</h4>
+        <h4 v-else>Verifique os seguintes erros:</h4>
+        <ul>
+          <li v-for="error in errors">{{error}}</li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

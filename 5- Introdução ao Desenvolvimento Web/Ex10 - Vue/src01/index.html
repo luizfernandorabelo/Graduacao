@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Search</title>
+  </head>
+  <body>
+    <div id="app" class="container-fluid">
+      <h1>Vue.js Search</h1>
+
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search term"
+          v-model="inputMovie"
+          @input="filterMovies"
+        />
+      </div>
+
+      <div class="result-container">
+        <h2>Results<span></span></h2>
+        <ul class="list-group">
+          <li v-for="movie in filteredMovies">{{movie}}</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
