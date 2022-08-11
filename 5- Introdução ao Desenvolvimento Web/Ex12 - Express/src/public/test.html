@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Info</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <h2>User Information</h2>
+
+      <label>User Name</label> <input v-model="username" type="text" /> <br />
+      <br />
+      <label>Password</label> <input v-model="password" type="text" /> <br />
+      <br />
+      <label>Email</label> <input v-model="email" type="text" /> <br />
+      <br />
+      <label>Address</label> <input v-model="address" type="text" /> <br />
+      <br />
+      <input type="button" value="Read" @click="readUser" />
+      <input type="button" value="Delete" @click="deleteUser" />
+      <input type="button" value="Create" @click="createUser" />
+      <input type="button" value="Clear Fieds" @click="clearFields" />
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+      const app = Vue.createApp({
+        data() {
+          return {
+            username: 'John',
+            password: '',
+            email: '',
+            address: '',
+          };
+        },
+        methods: {
+          async readUser() {
+            let resp = await fetch('/store/' + this.username);
+            resp = await resp.json();
+            console.log('resp: ', resp);
+            if (resp.error) {
+              alert(resp.error);
+            } else {
+              this.username = resp.name;
+              this.password = resp.password;
+              this.email = resp.email;
+              this.address = resp.address;
+            }
+          },
+          async deleteUser() {
+            let resp = await fetch('/store/' + this.username, {
+              method: 'DELETE',
+            });
+            resp = await resp.json();
+            console.log('resp: ', resp);
+            if (resp.error) {
+              alert(resp.error);
+            } else {
+              this.username = resp.name;
+              this.password = resp.password;
+              this.email = resp.email;
+              this.address = resp.address;
+            }
+          },
+          async createUser() {
+            let resp = await fetch('/store/', {
+              method: 'POST',
+              body: JSON.stringify({
+                name: this.username,
+                password: this.password,
+                email: this.email,
+                address: this.address,
+              }),
+              headers: { 'Content-type': 'application/json; charset=UTF-8' },
+            });
+            resp = await resp.json();
+            console.log('resp: ', resp);
+            if (resp.error) {
+              alert(resp.error);
+            }
+          },
+          clearFields() {
+            this.password = '';
+            this.email = '';
+            this.address = '';
+          },
+        },
+      });
+      app.mount('#app');
+    </script>
+  </body>
+</html>
