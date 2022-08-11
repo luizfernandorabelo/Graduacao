@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mad Talk</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Mad Talk</h1>
+
+      <div class="input-container">
+        <ul>
+          <li>Noun:<input type="text" id="noun" autocomplete="off" /></li>
+          <li>
+            Adjective: <input type="text" id="adjective" autocomplete="off" />
+          </li>
+          <li>
+            Someone's Name: <input type="text" id="name" autocomplete="off" />
+          </li>
+          <li id="gender-container">
+            <span>Gender:</span>
+            <input type="radio" name="gender" value="male" /><label for="gender"
+              >Male</label
+            ><input
+              type="radio"
+              name="gender"
+              checked="checked"
+              value="female"
+            /><label for="gender">Female</label>
+          </li>
+        </ul>
+
+        <button id="lib-button">Mad!</button>
+      </div>
+
+      <div id="story"></div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
