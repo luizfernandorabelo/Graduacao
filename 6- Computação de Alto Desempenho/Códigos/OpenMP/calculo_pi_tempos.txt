@@ -1,0 +1,5 @@
+-> Tempos coletados para cálculo de pi:
+    - calculo_pi_sequencial.c:              7.87288
+    - calculo_pi_paralelo_falso_compart.c:  4.59129
+    - calculo_pi_paralelo_critical.c:       2.44427
+    - calculo_pi_paralelo_reduction.c:      2.50982

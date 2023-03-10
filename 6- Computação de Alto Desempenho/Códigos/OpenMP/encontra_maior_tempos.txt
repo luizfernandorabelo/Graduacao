@@ -1,0 +1,4 @@
+-> Tempos coletados para tamanho do vetor = 1.000.000.000 e semente = 1
+    - encontra_maior_sequencial.c:          3.68363
+    - encontra_maior_paralelo_lock.c:       1.01408
+    - encontra_maior_paralelo_reduction.c:  1.88696

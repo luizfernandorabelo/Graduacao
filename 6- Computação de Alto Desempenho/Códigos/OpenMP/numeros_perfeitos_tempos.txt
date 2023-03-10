@@ -1,0 +1,3 @@
+-> Tempos coletados para limite superior = 100.000
+    - numeros_perfeitos_sequencial.c  15.379
+    - numeros_perfeitos_paralelo.c    09.063

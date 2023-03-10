@@ -1,0 +1,3 @@
+-> Tempos coletados para dimensão = 2.000 e semente = 1
+    - multiplicacao_matriz_sequencial.c  86.264
+    - multiplicacao_matriz_paralelo.c    35.544

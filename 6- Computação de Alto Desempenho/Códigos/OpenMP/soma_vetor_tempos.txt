@@ -1,0 +1,4 @@
+-> Tempos coletados para tamanho = 100.000.000 e seed = 1:
+    - soma_vetor_sequencial.c          0.338
+    - soma_vetor_paralelo_critical.c   5.781
+    - soma_vetor_paralelo_reduction.c  0.149
